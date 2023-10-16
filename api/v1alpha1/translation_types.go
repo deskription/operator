@@ -23,13 +23,21 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
+type TranslationSpecSelector struct {
+	ApiGroup   string `json:"apiGroup,omitempty"`
+	ApiVersion string `json:"apiVersion,omitempty"`
+	Kind       string `json:"kind,omitempty"`
+	Language   string `json:"language,omitempty"`
+	Country    string `json:"country,omitempty"`
+}
+
 // TranslationSpec defines the desired state of Translation
 type TranslationSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Translation. Edit translation_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Selector     TranslationSpecSelector `json:"selector,omitempty"`
+	Translations map[string]string       `json:"translations,omitempty"`
 }
 
 //+kubebuilder:object:root=true

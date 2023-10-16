@@ -35,10 +35,22 @@ spec:
           spec:
             description: ResourceActionSpec defines the desired state of ResourceAction
             properties:
-              foo:
-                description: Foo is an example field of ResourceAction. Edit resourceaction_types.go
-                  to remove/update
-                type: string
+              action:
+                description: ResourceTableDefaultOrder defines the desired state of
+                  ResourceTable
+                properties:
+                  patch:
+                    type: string
+                type: object
+              selector:
+                properties:
+                  apiGroup:
+                    type: string
+                  apiVersion:
+                    type: string
+                  kind:
+                    type: string
+                type: object
             type: object
         type: object
     served: true

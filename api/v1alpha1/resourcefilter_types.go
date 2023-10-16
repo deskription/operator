@@ -23,13 +23,24 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
+// ResourceFilter defines the desired state of ResourceTable
+type ResourceFilterSpecFilter struct {
+	Name    string                           `json:"name,omitempty"`
+	Options []ResourceFilterSpecFilterOption `json:"options,omitempty"`
+}
+
+// ResourceFilterSpecFilterOption defines the desired state of ResourceTable
+type ResourceFilterSpecFilterOption struct {
+	Name string `json:"name,omitempty"`
+}
+
 // ResourceFilterSpec defines the desired state of ResourceFilter
 type ResourceFilterSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of ResourceFilter. Edit resourcefilter_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Selector ResourceKindSelector     `json:"selector,omitempty"`
+	Filter   ResourceFilterSpecFilter `json:"filter,omitempty"`
 }
 
 //+kubebuilder:object:root=true

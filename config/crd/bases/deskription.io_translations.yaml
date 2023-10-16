@@ -35,10 +35,23 @@ spec:
           spec:
             description: TranslationSpec defines the desired state of Translation
             properties:
-              foo:
-                description: Foo is an example field of Translation. Edit translation_types.go
-                  to remove/update
-                type: string
+              selector:
+                properties:
+                  apiGroup:
+                    type: string
+                  apiVersion:
+                    type: string
+                  country:
+                    type: string
+                  kind:
+                    type: string
+                  language:
+                    type: string
+                type: object
+              translations:
+                additionalProperties:
+                  type: string
+                type: object
             type: object
         type: object
     served: true

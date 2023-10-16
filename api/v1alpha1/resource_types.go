@@ -28,8 +28,11 @@ type ResourceSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Resource. Edit resource_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Selector         ResourceKindSelector `json:"selector,omitempty"`
+	Category         string               `json:"category,omitempty"`
+	Label            string               `json:"label,omitempty"`
+	Abbreviation     string               `json:"abbreviation,omitempty"`
+	DocumentationURL string               `json:"documentationURL,omitempty"`
 }
 
 //+kubebuilder:object:root=true

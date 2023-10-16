@@ -35,10 +35,15 @@ spec:
           spec:
             description: ResourceRelationSpec defines the desired state of ResourceRelation
             properties:
-              foo:
-                description: Foo is an example field of ResourceRelation. Edit resourcerelation_types.go
-                  to remove/update
-                type: string
+              selector:
+                properties:
+                  apiGroup:
+                    type: string
+                  apiVersion:
+                    type: string
+                  kind:
+                    type: string
+                type: object
             type: object
         type: object
     served: true

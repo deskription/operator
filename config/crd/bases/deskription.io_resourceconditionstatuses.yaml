@@ -37,10 +37,17 @@ spec:
             description: ResourceConditionStatusSpec defines the desired state of
               ResourceConditionStatus
             properties:
-              foo:
-                description: Foo is an example field of ResourceConditionStatus. Edit
-                  resourceconditionstatus_types.go to remove/update
+              attribute:
                 type: string
+              selector:
+                properties:
+                  apiGroup:
+                    type: string
+                  apiVersion:
+                    type: string
+                  kind:
+                    type: string
+                type: object
             type: object
         type: object
     served: true

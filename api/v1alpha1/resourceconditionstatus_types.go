@@ -28,8 +28,8 @@ type ResourceConditionStatusSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of ResourceConditionStatus. Edit resourceconditionstatus_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Selector  ResourceKindSelector `json:"selector,omitempty"`
+	Attribute string               `json:"attribute,omitempty"`
 }
 
 //+kubebuilder:object:root=true

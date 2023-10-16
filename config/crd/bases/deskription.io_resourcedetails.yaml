@@ -35,10 +35,24 @@ spec:
           spec:
             description: ResourceDetailsSpec defines the desired state of ResourceDetails
             properties:
-              foo:
-                description: Foo is an example field of ResourceDetails. Edit resourcedetails_types.go
-                  to remove/update
-                type: string
+              attributes:
+                items:
+                  description: ResourceDetailsSpecAttribute defines the desired state
+                    of ResourceTable
+                  properties:
+                    name:
+                      type: string
+                  type: object
+                type: array
+              selector:
+                properties:
+                  apiGroup:
+                    type: string
+                  apiVersion:
+                    type: string
+                  kind:
+                    type: string
+                type: object
             type: object
         type: object
     served: true

@@ -23,13 +23,18 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
+// ResourceTableDefaultOrder defines the desired state of ResourceTable
+type ResourceActionSpecAction struct {
+	Patch string `json:"patch,omitempty"`
+}
+
 // ResourceActionSpec defines the desired state of ResourceAction
 type ResourceActionSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of ResourceAction. Edit resourceaction_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Selector ResourceKindSelector     `json:"selector,omitempty"`
+	Action   ResourceActionSpecAction `json:"action,omitempty"`
 }
 
 //+kubebuilder:object:root=true
