@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: ResourceFilter
+metadata:
+  labels:
+    app.kubernetes.io/name: resourcefilter
+    app.kubernetes.io/instance: resourcefilter-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: resourcefilter-sample
+spec:
+  # TODO(user): Add fields here

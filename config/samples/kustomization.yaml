@@ -1,0 +1,14 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- _v1alpha1_resourcegroup.yaml
+- _v1alpha1_resource.yaml
+- _v1alpha1_resourcestatus.yaml
+- _v1alpha1_resourceconditionstatus.yaml
+- _v1alpha1_resourcetable.yaml
+- _v1alpha1_resourcefilter.yaml
+- _v1alpha1_resourcedetails.yaml
+- _v1alpha1_resourcerelation.yaml
+- _v1alpha1_resourcetopology.yaml
+- _v1alpha1_resourceaction.yaml
+- _v1alpha1_translation.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

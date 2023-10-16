@@ -10,4 +10,82 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: operator
 repo: github.com/deskription/operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceGroup
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: Resource
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceStatus
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceConditionStatus
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceTable
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceFilter
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceDetails
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceRelation
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceTopology
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: ResourceAction
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: deskription.io
+  kind: Translation
+  path: github.com/deskription/operator/api/v1alpha1
+  version: v1alpha1
 version: "3"

@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: ResourceTable
+metadata:
+  labels:
+    app.kubernetes.io/name: resourcetable
+    app.kubernetes.io/instance: resourcetable-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: resourcetable-sample
+spec:
+  # TODO(user): Add fields here

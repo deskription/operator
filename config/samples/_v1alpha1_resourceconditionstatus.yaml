@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: ResourceConditionStatus
+metadata:
+  labels:
+    app.kubernetes.io/name: resourceconditionstatus
+    app.kubernetes.io/instance: resourceconditionstatus-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: resourceconditionstatus-sample
+spec:
+  # TODO(user): Add fields here

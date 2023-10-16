@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: ResourceTopology
+metadata:
+  labels:
+    app.kubernetes.io/name: resourcetopology
+    app.kubernetes.io/instance: resourcetopology-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: resourcetopology-sample
+spec:
+  # TODO(user): Add fields here

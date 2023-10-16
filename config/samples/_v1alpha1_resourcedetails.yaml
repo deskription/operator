@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: ResourceDetails
+metadata:
+  labels:
+    app.kubernetes.io/name: resourcedetails
+    app.kubernetes.io/instance: resourcedetails-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: resourcedetails-sample
+spec:
+  # TODO(user): Add fields here

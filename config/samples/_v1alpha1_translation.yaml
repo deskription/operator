@@ -1,0 +1,12 @@
+apiVersion: deskription.io/v1alpha1
+kind: Translation
+metadata:
+  labels:
+    app.kubernetes.io/name: translation
+    app.kubernetes.io/instance: translation-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: translation-sample
+spec:
+  # TODO(user): Add fields here
